@@ -39,9 +39,6 @@ export function pizzaReducer(
         case actions.CREATE:
             return pizzaAdapter.addOne(action.pizza, state);
 
-        case actions.READ:
-            return pizzaAdapter.addAll(action.pizzas, state);
-
         case actions.UPDATE:
             return pizzaAdapter.updateOne({
                 id: action.id,
